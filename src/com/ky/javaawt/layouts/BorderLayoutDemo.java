@@ -12,14 +12,12 @@ public class BorderLayoutDemo extends Frame {
         p3=new Panel();
         p4=new Panel();
         p5=new Panel();
-
         p1.setBackground(Color.red);
         p1.add(new Button("Button"));
         p2.setBackground(Color.green);
         p3.setBackground(Color.blue);
         p4.setBackground(Color.CYAN);
         p5.setBackground(Color.orange);
-
 
         add(p1,BorderLayout.NORTH);
         add(p2,BorderLayout.SOUTH);
