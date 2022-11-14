@@ -1,12 +1,20 @@
 package com.ky.javaawt.awtgraphics;
 
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class GraphicsDemo  extends Frame {
     public GraphicsDemo(){
         setSize(400,300);
         setVisible(true);
         setTitle("Graphics Demo");
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
     }
     @Override
     public void paint(Graphics g) {
